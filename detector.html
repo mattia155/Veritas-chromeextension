@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+  <head>
+    <style>
+      * {
+        --fore-color: #d3d3d3;
+      }
+      .material-icons {
+        vertical-align: middle; 
+        padding-top: 16px;
+        padding-left: 4px;
+      }
+    </style>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Veritas - Fake News Detector</title>
+    <!-- import jquery -->
+    <script src="jquery.js"></script>
+  </head>
+
+  <body style="width: 400px; height: 180px; background-color:#282c34;"> <!--#141414-->
+    
+    <!-- Logo div -->
+    <div id="logo" class="logo" style="width:38px; position:fixed; top:0.6rem; right:0.6rem;">
+      <img src="imgs/logobianco.png">
+    </div>
+    
+    <!-- Realiability of the news div -->
+    <div id="news">
+      <div class="row" style="background-color: #555555;">
+        <h2>Reliability score: </h2><h2 id="score" style="margin-left: 0px;"></h2><i id="thumb" class="material-icons md-light vertical-align-middle padding-bottom-3"></i>
+      </div>
+      <h6>
+        <br>
+        <div id="fakereports" class="row" style="margin: 0 75px;"> Reported as fake news: 0 times </div>
+        <div class="row">
+          <button id="reportFake" style="width: 250px; vertical-align: top; margin: 0 70px; text-align: center; 
+          line-height: 8px; font-size: 14px; background-color: #aaaaaa; border: none; text-decoration: none; border-radius: 8px;">
+            Report as Fake News
+          </button>
+        </div>
+      </h6>
+    </div>
+
+    <!-- No news found div -->
+    <div id="nonews" style="text-align:center; vertical-align: middle; padding: 20px; padding-top: 60px;">
+      <h4>No news detected</h4>
+    </div>
+
+    <!-- footer -->
+    <div id="footer">
+      <span style="float:left; bottom:5px; left:5px; font-size:12px; position: absolute;">#EUvsVirus</span>
+      <span style="float:right; bottom:5px; right:5px; font-size:12px; position: absolute;">U4U-Milan</span>
+    </d
+    iv>
+  </body>
+  
+  <!-- Javascript handler -->
+  <script src="detector.js"></script>
+
+</html>
